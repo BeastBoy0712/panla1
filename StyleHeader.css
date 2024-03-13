@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* tự căn chỉnh */
+  font-family: Arial, Helvetica, sans-serif;
+  /*chỉnh font chữ*/
+  /*width: 100vw;
+    height: 100vh;
+    chỉnh vừa màn*/
+}
+.logo,
+.slogan {
+  position: absolute;
+  /* Đặt top, right, bottom, và left để căn chỉnh vị trí của .logo và .slogan trên hình ảnh nền */
+}
+.logo {
+  top: 0px;
+}
+.logo > img {
+  width: 100px;
+}
+.slogan {
+  top: 125px;
+  left: 20%;
+  font-size: 4vw;
+  text-transform: uppercase;
+  /* tự định dạng căn lề cho chữ  + chuyển chữ thường thành in hoa*/
+  font-weight: bold;
+  /* thiết lập chữ in đậm*/
+  color: darkblue;
+  /* thiết lập màu chữ*/
+  text-shadow: 3px 3px rgba(251, 248, 248, 0.7);
+  animation: doimauchu /*1.5s ease infinite*/ 5s ease infinite alternate;
+  /*hiệu ứng đổi màu chữ 1s đổi 1 lần vs vô hạn với keyfarm ở dưới*/
+}
+.theme > img {
+  width: 100%;
+  height: 380px;
+}
+header {
+  width: 100%;
+  height: 380px;
+  margin: 0 auto;
+  /*background-color: rgba(0, 255, 166, 0.296);*/
+}
+@keyframes doimauchu {
+  0% {
+    color: #8b4513;
+  }
+  25% {
+    color: #228b22;
+  }
+  50% {
+    color: #ff0000;
+  }
+  75% {
+    color: #ffd700;
+  }
+  100% {
+    color: #000000;
+  }
+}
